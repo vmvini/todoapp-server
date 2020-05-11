@@ -68,7 +68,7 @@ export default class ProjectController {
       return res.status(200).send({
         success: true,
         message: "Project updated",
-        data: newUser,
+        data: newUser.projects[index],
       });
     } catch (err) {
       return res.status(500).send({
